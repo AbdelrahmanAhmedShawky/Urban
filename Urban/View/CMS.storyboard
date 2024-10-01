@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Term And Condition View Controller-->
+        <scene sceneID="Q67-x4-It1">
+            <objects>
+                <viewController storyboardIdentifier="TermAndConditionViewController" id="AzG-mM-CJF" customClass="TermAndConditionViewController" customModule="Urban" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DFG-6a-BXq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iu-H9-hNo">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-JM-bYu">
+                                        <rect key="frame" x="20" y="10" width="353" height="739"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a dolor posuere pretium sit amet quis nisi. Donec in accumsan ipsum. Sed in nunc sapien. In iaculis magna in enim convallis, sed egestas nunc feugiat. Morbi augue massa, ultricies non imperdiet eget, lobortis in purus. Donec dignissim rutrum purus ut mattis. Donec dignissim quis libero quis luctus. Duis eu luctus nisl, nec facilisis massa.
+Curabitur rhoncus ut turpis nec tempus. Nunc nec est sit amet augue dignissim tempor non ac ex. Nulla porta consectetur lectus finibus dignissim. 
+
+Curabitur fringilla enim sit amet lacus vestibulum pharetra. Nam eget lacus vel libero volutpat facilisis. Suspendisse sollicitudin commodo tortor, sed egestas risus finibus eget. Maecenas at venenatis leo. Donec gravida, urna eget euismod maximus, tellus nibh lobortis tellus, id vulputate diam erat vel neque. Nullam vel neque sed diam aliquam condimentum. Mauris scelerisque vel purus vel dictum. Aenean at ultricies mi.
+Morbi augue massa, ultricies non imperdiet eget, lobortis in purus. Donec dignissim rutrum purus ut mattis. Donec dignissim quis libero quis luctus. Duis eu luctus nisl, nec facilisis massa.</string>
+                                        <color key="textColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Smb-JM-bYu" firstAttribute="centerX" secondItem="6iu-H9-hNo" secondAttribute="centerX" id="AL5-Qg-5vD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Smb-JM-bYu" secondAttribute="bottom" constant="10" id="ASe-lj-3bn"/>
+                                    <constraint firstItem="Smb-JM-bYu" firstAttribute="top" secondItem="6iu-H9-hNo" secondAttribute="top" constant="10" id="ftp-IB-Fh6"/>
+                                    <constraint firstItem="Smb-JM-bYu" firstAttribute="leading" secondItem="6iu-H9-hNo" secondAttribute="leading" constant="20" id="wQ4-qL-onU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N5T-gc-oxV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N5T-gc-oxV" firstAttribute="trailing" secondItem="6iu-H9-hNo" secondAttribute="trailing" id="6Zg-8l-gu3"/>
+                            <constraint firstItem="6iu-H9-hNo" firstAttribute="leading" secondItem="N5T-gc-oxV" secondAttribute="leading" id="KLm-w3-YgR"/>
+                            <constraint firstItem="N5T-gc-oxV" firstAttribute="bottom" secondItem="6iu-H9-hNo" secondAttribute="bottom" id="b3b-LD-Hz7"/>
+                            <constraint firstItem="6iu-H9-hNo" firstAttribute="top" secondItem="N5T-gc-oxV" secondAttribute="top" id="gO4-gs-XCR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQK-WI-Tnt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1999" y="-232"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="AWZ-7f-imw">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyPolicyViewController" id="FEw-Vu-OLk" customClass="PrivacyPolicyViewController" customModule="Urban" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jWc-1S-ppR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-WJ-XUA">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-qb-E80">
+                                        <rect key="frame" x="20" y="10" width="353" height="739"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">At Urbanmop, we prioritize the protection of our website visitors' privacy. This policy outlines our approach to handling your personal information. By using our website and agreeing to this policy, you consent to the use of cookies in accordance with the terms stated here. Below, we explain the types of information we collect and how we utilize it:
+
+1. Personal Information Collection: 
+We may collect, store, and utilize the following personal information:
+
+Details about your computer, visits to our website, and usage data, including IP address, geographical location, browser type, operating system, referral source, duration of visit, page views, and website navigation.
+
+Information related to transactions conducted between you and us on or through our website, including purchases of goods or services, such as booking a cleaner through Urbanmop.</mutableString>
+                                        <color key="textColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="n1S-qb-E80" firstAttribute="top" secondItem="q7o-WJ-XUA" secondAttribute="top" constant="10" id="3Xy-bx-cVd"/>
+                                    <constraint firstItem="n1S-qb-E80" firstAttribute="leading" secondItem="q7o-WJ-XUA" secondAttribute="leading" constant="20" id="7kw-8Z-o6k"/>
+                                    <constraint firstAttribute="bottom" secondItem="n1S-qb-E80" secondAttribute="bottom" constant="10" id="Rzc-Bz-kJb"/>
+                                    <constraint firstItem="n1S-qb-E80" firstAttribute="centerX" secondItem="q7o-WJ-XUA" secondAttribute="centerX" id="yd5-wZ-yNj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UQ6-VU-K5i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UQ6-VU-K5i" firstAttribute="bottom" secondItem="q7o-WJ-XUA" secondAttribute="bottom" id="3Qb-UQ-jyd"/>
+                            <constraint firstItem="q7o-WJ-XUA" firstAttribute="top" secondItem="UQ6-VU-K5i" secondAttribute="top" id="QyS-xD-ml4"/>
+                            <constraint firstItem="q7o-WJ-XUA" firstAttribute="leading" secondItem="UQ6-VU-K5i" secondAttribute="leading" id="imP-DP-pU8"/>
+                            <constraint firstItem="UQ6-VU-K5i" firstAttribute="trailing" secondItem="q7o-WJ-XUA" secondAttribute="trailing" id="owY-fZ-MF5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEh-cV-f9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="-232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

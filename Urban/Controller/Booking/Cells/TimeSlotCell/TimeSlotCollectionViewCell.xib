@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DMSans-Medium.ttf">
+            <string>DMSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimeSlotCollectionViewCell" customModule="Urban" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="67"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-Re-Hwe">
+                        <rect key="frame" x="0.0" y="0.0" width="230" height="67"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLH-CD-hTt">
+                                <rect key="frame" x="2" y="2" width="226" height="63"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTZ-fo-d0g" customClass="Gradient" customModule="Urban" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="63"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="border-orange"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" name="top-gradiant"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" name="bottom-gradiant"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00 AM - 9:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wj6-oH-4ri">
+                                        <rect key="frame" x="49.999999999999993" y="22.333333333333336" width="126.33333333333331" height="18.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="DMSans-Medium" family="DM Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kTZ-fo-d0g" secondAttribute="bottom" id="G3f-Zc-pWb"/>
+                                    <constraint firstItem="Wj6-oH-4ri" firstAttribute="centerY" secondItem="bLH-CD-hTt" secondAttribute="centerY" id="Ptd-Wp-ex9"/>
+                                    <constraint firstItem="kTZ-fo-d0g" firstAttribute="top" secondItem="bLH-CD-hTt" secondAttribute="top" id="Tfd-cG-4v0"/>
+                                    <constraint firstItem="kTZ-fo-d0g" firstAttribute="leading" secondItem="bLH-CD-hTt" secondAttribute="leading" id="VcK-UR-lud"/>
+                                    <constraint firstAttribute="trailing" secondItem="kTZ-fo-d0g" secondAttribute="trailing" id="iGp-8M-v32"/>
+                                    <constraint firstItem="Wj6-oH-4ri" firstAttribute="centerX" secondItem="bLH-CD-hTt" secondAttribute="centerX" id="iv1-kJ-Bfy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="border-orange"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bLH-CD-hTt" firstAttribute="leading" secondItem="CkQ-Re-Hwe" secondAttribute="leading" constant="2" id="CY0-MV-3uI"/>
+                            <constraint firstItem="bLH-CD-hTt" firstAttribute="top" secondItem="CkQ-Re-Hwe" secondAttribute="top" constant="2" id="ID7-6M-oQd"/>
+                            <constraint firstAttribute="trailing" secondItem="bLH-CD-hTt" secondAttribute="trailing" constant="2" id="czd-L5-nn1"/>
+                            <constraint firstAttribute="bottom" secondItem="bLH-CD-hTt" secondAttribute="bottom" constant="2" id="ede-vi-wFV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="CkQ-Re-Hwe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hpu-LJ-E5j"/>
+                <constraint firstAttribute="trailing" secondItem="CkQ-Re-Hwe" secondAttribute="trailing" id="bHI-do-vv1"/>
+                <constraint firstItem="CkQ-Re-Hwe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ebJ-lB-wU1"/>
+                <constraint firstAttribute="bottom" secondItem="CkQ-Re-Hwe" secondAttribute="bottom" id="yHX-L0-jP9"/>
+            </constraints>
+            <size key="customSize" width="230" height="67"/>
+            <connections>
+                <outlet property="gradientView" destination="kTZ-fo-d0g" id="5dm-VX-u9S"/>
+                <outlet property="timeLabel" destination="Wj6-oH-4ri" id="DmG-eM-AOF"/>
+            </connections>
+            <point key="canvasLocation" x="41.221374045801525" y="25.704225352112676"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="border-orange">
+            <color red="1" green="0.93699997663497925" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bottom-gradiant">
+            <color red="1" green="0.54100000858306885" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="top-gradiant">
+            <color red="1" green="0.7369999885559082" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

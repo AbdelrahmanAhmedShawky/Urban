@@ -1,0 +1,6 @@
+framework module ADCalenderView {
+  umbrella header "ADCalenderView-umbrella.h"
+
+  export *
+  module * { export * }
+}
